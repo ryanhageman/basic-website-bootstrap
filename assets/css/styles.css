@@ -1,0 +1,92 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.navbar-brand{
+  padding-top: 0;
+}
+
+.navbar-brand img {
+  width: 50px;
+  display: inline-block;
+}
+
+.jumbotron {
+  background-image: url('../images/customer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25% 0 10% 0;
+  margin-bottom: 0;
+  margin-top: -70px;
+  padding-left: 20px!important;
+  color: #E6E6E6;
+}
+
+.jumbotron .message {
+  max-width: 50%;
+}
+
+.client-logos {
+  margin-bottom: 10px;
+}
+
+.client-logos a {
+  text-decoration: none;
+}
+
+.client-logo-panel {
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.client-logo-image {
+  position: relative;
+  height: 80px;
+}
+
+.client-logo-image img {
+  max-height: 100%;
+  max-width: 70%;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1);  Google Chrome, Safari 6+ & Opera 15+
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+.client-logo-image img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+footer {
+  height: 50px;
+  margin-top: 20px;
+  background-color: #292627;
+}
+
+footer p {
+  padding-top: 15px;
+  color: #E6E6E6;
+}
+
+@media screen and (max-width: 767px) {
+  .jumbotron {
+    padding: 45% 0 5% 0;
+  }
+  .jumbotron .message {
+    max-width: 65%;
+  }
+}
